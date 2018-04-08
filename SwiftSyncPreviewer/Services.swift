@@ -11,7 +11,7 @@ class Services {
     static let shared = Services()
     let changeService = MockChangeService()
     class func makeService(url: URL?, responder: SystemResponseWantsToSync?) -> ChangeService? {
-        return nil//FileChangeService().configured(url: url).configured(responder: responder)
+        return FileChangeService().configured(url: url).configured(responder: responder)
     }
 }
 

@@ -12,14 +12,11 @@
 		0AD3AA7220768AF100FBD504 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA7120768AF100FBD504 /* Document.swift */; };
 		0AD3AA7420768AF200FBD504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3AA7320768AF200FBD504 /* Assets.xcassets */; };
 		0AD3AA7720768AF200FBD504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3AA7520768AF200FBD504 /* Main.storyboard */; };
-		0AD3AA892076930000FBD504 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3AA882076930000FBD504 /* Sample.pdf */; };
 		0AD3AA8B207695B200FBD504 /* ViewControllersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA8A207695B200FBD504 /* ViewControllersProtocols.swift */; };
 		0AD3AA8D207695C400FBD504 /* UserActionsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA8C207695C400FBD504 /* UserActionsProtocols.swift */; };
 		0AD3AA91207695F500FBD504 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA90207695F500FBD504 /* Result.swift */; };
 		0AD3AA932076988A00FBD504 /* ViewController+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA922076988A00FBD504 /* ViewController+Model.swift */; };
 		0AD3AA952076AE0400FBD504 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA942076AE0400FBD504 /* Services.swift */; };
-		0AD3AA982076B01700FBD504 /* Sample_1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3AA962076B01600FBD504 /* Sample_1.pdf */; };
-		0AD3AA992076B01700FBD504 /* Sample_2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0AD3AA972076B01600FBD504 /* Sample_2.pdf */; };
 		0AD3AA9B207775E000FBD504 /* DocumentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA9A207775E000FBD504 /* DocumentController.swift */; };
 		0AD3AAC02077913200FBD504 /* FileEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA9E2077913200FBD504 /* FileEvent.swift */; };
 		0AD3AAC12077913200FBD504 /* EventStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3AA9F2077913200FBD504 /* EventStream.swift */; };
@@ -35,14 +32,11 @@
 		0AD3AA7620768AF200FBD504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AD3AA7820768AF200FBD504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AD3AA7920768AF200FBD504 /* SwiftSyncPreviewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftSyncPreviewer.entitlements; sourceTree = "<group>"; };
-		0AD3AA882076930000FBD504 /* Sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sample.pdf; sourceTree = "<group>"; };
 		0AD3AA8A207695B200FBD504 /* ViewControllersProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersProtocols.swift; sourceTree = "<group>"; };
 		0AD3AA8C207695C400FBD504 /* UserActionsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionsProtocols.swift; sourceTree = "<group>"; };
 		0AD3AA90207695F500FBD504 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0AD3AA922076988A00FBD504 /* ViewController+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Model.swift"; sourceTree = "<group>"; };
 		0AD3AA942076AE0400FBD504 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		0AD3AA962076B01600FBD504 /* Sample_1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sample_1.pdf; sourceTree = "<group>"; };
-		0AD3AA972076B01600FBD504 /* Sample_2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sample_2.pdf; sourceTree = "<group>"; };
 		0AD3AA9A207775E000FBD504 /* DocumentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentController.swift; sourceTree = "<group>"; };
 		0AD3AA9E2077913200FBD504 /* FileEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileEvent.swift; sourceTree = "<group>"; };
 		0AD3AA9F2077913200FBD504 /* EventStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventStream.swift; sourceTree = "<group>"; };
@@ -119,9 +113,6 @@
 		0AD3AA8420768B6400FBD504 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				0AD3AA962076B01600FBD504 /* Sample_1.pdf */,
-				0AD3AA972076B01600FBD504 /* Sample_2.pdf */,
-				0AD3AA882076930000FBD504 /* Sample.pdf */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -226,10 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD3AA892076930000FBD504 /* Sample.pdf in Resources */,
 				0AD3AA7420768AF200FBD504 /* Assets.xcassets in Resources */,
-				0AD3AA992076B01700FBD504 /* Sample_2.pdf in Resources */,
-				0AD3AA982076B01700FBD504 /* Sample_1.pdf in Resources */,
 				0AD3AA7720768AF200FBD504 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

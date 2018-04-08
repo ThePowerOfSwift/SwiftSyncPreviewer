@@ -57,12 +57,19 @@ extension NSOpenPanel {
 }
 
 extension DocumentController: NSWindowDelegate {
-    func tryOpenChooseDocumentPanel() {
-        if NSApp.windows.isEmpty {
+    func openChooseDocumentPanel() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.milliseconds(300)) {
             self.openDocument(nil)
         }
     }
+    func tryOpenChooseDocumentPanel() {
+        if NSApp.windows.isEmpty {
+            self.openChooseDocumentPanel()
+        }
+    }
     func windowWillClose(_ notification: Notification) {
-        tryOpenChooseDocumentPanel()
+        if NSApp.windows.count == 1 {
+            self.openChooseDocumentPanel()
+        }
     }
 }

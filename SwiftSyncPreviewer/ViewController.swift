@@ -85,7 +85,7 @@ class _PDFView: PDFView {
         let tuple = FunctionLimit(name: #function, label: page.label!)
         if (functionsLimit[tuple] ?? 0) == 0 || (functionsLimit[tuple] ?? 0) > 2 {
 //            super.draw(page, to: context)
-//            super.draw(page, to: context)
+            super.draw(page, to: context)
             functionsLimit[tuple] = 1
             return
         }
@@ -100,9 +100,9 @@ class _PDFView: PDFView {
     override func drawPagePost(_ page: PDFPage, to context: CGContext) {
         let tuple = FunctionLimit(name: #function, label: page.label!)
 
-        if functionsLimit[tuple] != 0 {
-            super.drawPagePost(page, to: context)
-            super.drawPagePost(page, to: context)
+        if (functionsLimit[tuple] ?? 0) == 0 || (functionsLimit[tuple] ?? 0) > 2 {
+//            super.drawPagePost(page, to: context)
+//            super.drawPagePost(page, to: context)
             functionsLimit[tuple] = 0
             return
         }

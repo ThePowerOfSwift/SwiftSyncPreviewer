@@ -16,9 +16,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        defer {
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(1), execute: {
             self.documentController.tryOpenChooseDocumentPanel()
-        }
+        })
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
